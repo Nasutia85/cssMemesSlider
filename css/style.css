@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    overflow-x: hidden;
+    font-size: 62.5%;
+    font-family: "SUSE", sans-serif;
+    font-style: normal;
+    color: #ff73f6;
+    background-color: #1a1a1a;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 2%;
+}
+
+.switcher {
+    width: 90%;
+    max-width: 53rem;
+    height: 90vh;
+    max-height: 70rem;
+    margin: 0 auto;
+    margin-top: 6rem;
+}
+
+.img__wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.img {
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    max-width: 400%;
+    margin: 0 auto;
+}
+
+.switcher_div {
+    flex-shrink: 0;
+    width: 100%;
+    transition: all 0.7s ease;
+}
+
+.switcher_div img {
+    width: 100%;
+    max-width: 100%;
+    transition: 0.5s;
+}
+
+.nav__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+}
+
+.text_div {
+    overflow: hidden;
+    display: flex;
+}
+
+.text {
+    flex-shrink: 0;
+    width: 100%;
+    font-size: 2.5rem;
+}
+
+input[name="radio"] {
+    display: none;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.circle__line {
+    width: 2rem;
+    height: 2rem;
+    background-color: #fd73ff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.line:hover .circle__line {
+    border: #fefefe solid 0.1rem;
+    background-color: #fefefe;
+}
+
+#radio_1:checked ~ .nav__wrapper  #field_1 {
+    border: #7aff73 solid 0.2rem;
+    background-color: #0e0e0e;
+    transition: 0.8s;
+}
+
+#radio_1:checked ~ .nav__wrapper label:hover #field_1 {
+    border: #fefefe solid 0.2rem;
+    background-color: #0e0e0e;
+    transition: 0.8s;
+}
+
+#radio_2:checked ~ .nav__wrapper #field_2 {
+    border: #7aff73 solid 0.2rem;
+    background-color: #0e0e0e;
+    transition: 0.8s;
+}
+
+#radio_2:checked ~ .nav__wrapper label:hover #field_2 {
+    border: #fefefe solid 0.2rem;
+    background-color: #0e0e0e;
+    transition: 0.8s;
+}
+
+#radio_3:checked ~ .nav__wrapper #field_3 {
+    border: #7aff73 solid 0.2rem;
+    background-color: #0e0e0e;
+    transition: 0.8s;
+}
+
+#radio_3:checked ~ .nav__wrapper label:hover #field_3 {
+    border: #fefefe solid 0.2rem;
+    background-color: #0e0e0e;
+    transition: 0.8s;
+}
+
+#radio_4:checked ~ .nav__wrapper #field_4 {
+    border: #7aff73 solid 0.2rem;
+    background-color: #0e0e0e;
+    transition: 0.8s;
+}
+
+#radio_4:checked ~ .nav__wrapper label:hover #field_4 {
+    border: #fefefe solid 0.2rem;
+    background-color: #0e0e0e;
+    transition: 0.8s;
+}
+
+#radio_1:checked ~ .nav__wrapper .text_div div {
+    transform: translate(0);
+    transition: 0.5s;
+}
+
+#radio_2:checked ~ .nav__wrapper .text_div div {
+    transform: translate(-100%);
+    transition: 0.5s;
+}
+
+#radio_3:checked ~ .nav__wrapper .text_div div {
+    transform: translate(-200%);
+    transition: 0.5s;
+}
+
+#radio_4:checked ~ .nav__wrapper .text_div div {
+    transform: translate(-300%);
+    transition: 0.5s;
+}
+
+#radio_1:checked ~ .img img {
+    transform: translate(0);
+}
+
+#radio_2:checked ~ .img img {
+    transform: translate(-100%);
+}
+
+#radio_3:checked ~ .img  img {
+    transform: translate(-200%);
+}
+
+#radio_4:checked ~ .img img {
+    transform: translate(-300%);
+}
+
+@media screen and (max-width: 660px) {
+    img {
+        margin-bottom: 1rem;
+    }
+
+    .switcher {
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+    
+    .nav__wrapper {
+        flex-direction: column-reverse;
+        margin-top: 1rem;
+    }
+
+    .nav__wrapper .nav {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .nav__wrapper .text_div {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+}
