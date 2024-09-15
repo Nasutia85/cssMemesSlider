@@ -195,3 +195,32 @@ label {
 #radio_4:checked ~ .img img {
     transform: translate(-300%);
 }
+
+@media screen and (max-width: 660px) {
+    img {
+        margin-bottom: 1rem;
+    }
+
+    .switcher {
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+    
+    .nav__wrapper {
+        flex-direction: column-reverse;
+        margin-top: 1rem;
+    }
+
+    .nav__wrapper .nav {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .nav__wrapper .text_div {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+}
