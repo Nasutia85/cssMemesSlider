@@ -3,30 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cssMemeSlider</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <title>CSS Meme Switcher</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
-        <div class="slider-container">
-
-            <div class="image-container">
-                <input type="radio" name="radio-btn" id="radio1" checked>
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
-
-            <div class="img">
-                <div class="slider">
-                    <img src="/assets/dog-and-cats.jpg">Great place, I'll sit here.
+        <div class="switcher">
+            <div class="img__wrapper">
+                <input type="radio" name="radio" id="radio_1" checked>
+                <input type="radio" name="radio" id="radio_2">
+                <input type="radio" name="radio" id="radio_3">
+                <input type="radio" name="radio" id="radio_4">
+                <div class="img">
+                    <div class="switcher_div"><img src="./assets/img/mem-1.jpg" alt="Your code is the worst I've ever run"></div>
+                    <div class="switcher_div"><img src="./assets/img/mem-2.jpg" alt="What do I want to do"></div>
+                    <div class="switcher_div"><img src="./assets/img/mem-3.jpg" alt="Dad, why is the sky blue?"></div>
+                    <div class="switcher_div"><img src="./assets/img/mem-4.jpg" alt="What the client wants"></div>
                 </div>
-                <div class="slider" img src="./assets/images(1).jpg">Be careful, very attentive dog</div>
-                <div class="slider" img src="./assets/images.jpg">- Ah, where are the thieves? - He fell for it again.</div>
-                <div class="slider" img src="./assets/sobaki-prikoly-s-nadpisiami-22.webp">I told you I can't go off-road. I have a low seating position.</div>
-            </div>
+                <div class="nav__wrapper">
+                    <div class="text_div">
+                        <div class="text first_text">Great place, I'll sit here.</div>
+                        <div class="text">Be careful, very attentive dog.</div>
+                        <div class="text">- Ah, where are the thieves? - He fell for it again.</div>
+                        <div class="text">"-What are you doing today?-Sports.Today I have figure skating.</div>
+                    </div>
+                    <div class="nav">
+                        <label for="radio_1" class="line">
+                            <span class="circle__line" id="field_1"></span>
+                        </label>
+                        <label for="radio_2" class="line">
+                            <span class="circle__line" id="field_2"></span>
+                        </label>
+                        <label for="radio_3" class="line">
+                            <span class="circle__line" id="field_3"></span>
+                        </label>
+                        <label for="radio_4" class="line">
+                            <span class="circle__line" id="field_4"></span>
+                        </label>
+                    </div>
+                </div>
             </div>
         </div>
-
     </main>
 </body>
 </html>
